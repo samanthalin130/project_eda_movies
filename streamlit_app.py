@@ -14,3 +14,5 @@ filtered = df[df['genres'].str.contains(selected_genre, na=False)]
 
 st.write(f"Showing {len(filtered)} movies in **{selected_genre}**")
 st.dataframe(filtered[['Title', 'Year', 'genres']])
+
+streamlit run streamlit_app.py
